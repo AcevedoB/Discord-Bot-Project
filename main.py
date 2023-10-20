@@ -12,12 +12,12 @@ import discord.ext
 from discord.utils import get
 from discord.ext import commands, tasks
 
-# ========================= ENVIRONMENTAL VARIABLES ========================= #
+# ========== ENVIRONMENTAL VARIABLES ========== #
 TOKEN = os.environ['DISCORD_TOKEN']
 GUILD = os.environ['DISCORD_GUILD']
 
 
-# ========================= NPCFORGE CLASS ========================= #
+# ========== NPCFORGE CLASS ========== #
 class NPCForge(commands.Bot):
 
   def __init__(self, command_prefix, intents):
@@ -55,11 +55,11 @@ class NPCForge(commands.Bot):
   # make sure you're indenting so everything falls under the NPCForge class. thanks! <3
 
 
-# ========================= CREATING INSTANCE OF INTENTS ========================= #
+# ========== CREATING INSTANCE OF INTENTS ========== #
 intents = discord.Intents.all()
 intents.messages = True
 
-# ========================= INITIALIZING NPCFORGE ========================= #
+# ========== INITIALIZING NPCFORGE ========== #
 client = NPCForge(command_prefix='!', intents=intents)
 keep_alive.keep_alive()  # Keeps the bot up and running!
 client.run(TOKEN)
