@@ -16,6 +16,8 @@ from discord.ext import commands, tasks
 TOKEN = os.environ['DISCORD_TOKEN']
 GUILD = os.environ['DISCORD_GUILD']
 
+# These variables have been defined in the repl.
+
 
 # ========== NPCFORGE CLASS ========== #
 class NPCForge(commands.Bot):
