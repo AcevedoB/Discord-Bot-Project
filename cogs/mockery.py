@@ -1,4 +1,4 @@
-# ========================= IMPORT BLOCK ========================= #
+# ============== IMPORT BLOCK ============== #
 import pandas
 import random
 
@@ -69,12 +69,16 @@ class ViciousMockery(commands.Cog, name='Vicious Mockery Quotes'):
   @commands.command()
   async def pain(self, ctx, *, username: discord.Member = None):
     pain = [
-        "Kill yourself", "Your life means nothing", "Blow your brains out",
+        "Kill yourself", "Your life means nothing", "That's why yo momma dead",
         "You're a failure", "Do better", "Worthless sack of shit",
         "*Smacks your head with a weighted stuffie*",
         "Shut the fuck up, you sound stupid",
         "At least I have a family that loves me", "Lmao are you crying?",
-        "Quit being a Mia"
+        "Quit being a Mia", "Ur mom", "Sleep with one eye open",
+        "I do have your IP yknow", "You jerk off to anime dont you",
+        "You can tell you've never been beat enough as a child",
+        "Everyone talks behind your back", "You ain't amounting to shit",
+        "Your mother wishes she swallowed you fr", "K.", "Yikes..."
     ]
 
     if username is not None:
